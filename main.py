@@ -9,6 +9,6 @@ prompt = input()
 
 test_prompt = "This is a test"
 
-response = openai.Completion.create(engine="davinci", prompt=prompt, max_tokens=5, echo=True)
+response = openai.Completion.create(engine="davinci", prompt=prompt, max_tokens=5, echo=True, temperature=0.9)
 
 print(response["choices"][0]["text"])
